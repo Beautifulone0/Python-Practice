@@ -122,7 +122,7 @@ while trys > 0:
 
 counter = 1
 
-while counter > 1:
+while counter <= 10:
     print(counter)
     counter += 1
 
@@ -131,8 +131,8 @@ while counter > 1:
 
 even = 2
 
-while even > 2:
-    if even % 2:
+while even <= 20:
+    if even % 2 == 0:
         print(even)
         even += 1
 
@@ -190,9 +190,8 @@ while greater_number > 0:
     if greater <= 10:
         print(" Number too small")
     else:
-        if greater > 10:
-            print("Valid Number ")
-            break
+        print("Valid Number ")
+        break
 
 
 

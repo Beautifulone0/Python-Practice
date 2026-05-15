@@ -188,3 +188,8 @@ num4 =2e400
 print(num4)
 print("\n")
 # Practice day 5
+#round
+num = 4.5
+print(round(num))
+num2= 5.432
+print(round(num2, 2))

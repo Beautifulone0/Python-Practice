@@ -189,7 +189,40 @@ print(num4)
 print("\n")
 # Practice day 5
 #round
-num = 4.5
-print(round(num))
+# Write a program that asks the user to input a number and then displays that number rounded to two decimal places. When run, your program should look like this:
+# Enter a number: 5.432 
+# 5.432 rounded to 2 decimal places is 5.43
 num2= 5.432
 print(round(num2, 2))
+# 2. Write a program that asks the user to input a number and then displays them absolute value of that number. When run, your program should look like this:
+# Enter a number: -10
+# The absolute value of -10 is 10.0
+absolute = int(input("Enter a Number: "))
+response = abs(absolute)
+print(f"The absolute value of {absolute} is {response}")
+# 3. Write a program that asks the user to input two numbers by using input() twice, then displays whether the difference between those two numbers is an integer. When run, your program should look like this:
+# Enter a number: 1.5
+# Enter another number: .5
+# The difference between 1.5 and .5 is an integer? True!
+# If the user inputs two numbers whose difference is not integral,
+# then the output should look like this:
+# Enter a number: 1.5
+# Enter another number: 1.0
+# The difference between 1.5 and 1.0 is an integer? False!
+
+num1 = float(input("Enter a number: "))
+num2 = float(input("Enter another number: "))
+
+difference = num1 - num2
+is_integer = difference.is_integer()
+print(f"The difference between {num1} and {num2} is an integer? {is_integer}!")
+
+# 1. Print the result of the calculation 3 ** .125 as a fixed-point number with three decimal places.
+calculation = 3 ** .125
+print(f"{calculation:.3f}")
+# 2. Print the number 150000 as currency with the thousands grouped with commas. Currency should be displayed with two decimal places.
+currency = 150000
+print(f"{currency:,.2f}")
+# 3. Print the result of 2 / 10 as a percentage with no decimal places. The output should look like 20%.
+percentage = 2/10
+print(f"{percentage:.0%}")
